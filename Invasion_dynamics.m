@@ -1,12 +1,10 @@
-function gend = Invasion_dynamics(mstrains,alphastrains,S,beta,C,G,T,A,M,f0)
+function gend = Invasion_dynamics(mstrains,alphastrains,S,beta,C,G,T,A,M,f)
 
 % This function simulates then invasion dynamics over G generations.
 % Parameters: G - number of generations
-%             f0 - initial frequency of each strain.
+%             f - initial frequency of each strain.
 
 g=zeros(S,1);
-
-f=f0;
 
 for i=1:G
 
