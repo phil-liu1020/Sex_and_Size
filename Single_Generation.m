@@ -3,6 +3,7 @@ function f = Single_Generation(mstrains,alphastrains,x,S,beta,C)
 % Simulates the frequency after each successive generation.
 % x is the output of the function "Fertilisation_Kinetics" which represents the number of cells of each type e.g. number of unfused cells of strain 1, number of strain 1 cells that have fused with strain 3 etc.
 % \beta is the resistance to survival and C is the fusion cost as defined in the text.
+% mstrains and alphastrains are the mass and fusion rates of each strain.
 
 Mv=unisexual_ODE_Multistrain_SingleGen(alphastrains,S);  % writes the array Mv which is used to determine what each column of x (each ODE) represents. e.g. when S=2, x(4) represents F^{1}_{2} the number of strain 1 cells that've fused with strain 2 cells.
 f=zeros(S,1);
