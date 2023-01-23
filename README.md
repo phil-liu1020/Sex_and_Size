@@ -11,5 +11,7 @@ Simulations for Figure S2 and S3 are obtained using Invasion_Dynamics with param
 
 Simulations for Figure S4 are obtained using Invasion_Dynamics_Mass_FRTI_FixedSw with parameters as specified in the figure caption.
 
-The data for Figure S5 to S13 are obtained using 
+The data for Figures S5 to S8 as well as S13 and S14 are obtained using Evol_Dynamics_Mass_Alpha_EvolBranching, with parameters as described in the caption.
+
+The data for Figures S9 to S12 are obtained using Evol_Dynamics_Mass_Alpha_Switching_Gillespie_Branching.
 
