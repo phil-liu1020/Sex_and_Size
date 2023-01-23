@@ -5,6 +5,7 @@ function gend = Invasion_dynamics(mstrains,alphastrains,S,beta,C,G,T,A,M,f)
 %             f - initial frequency of each strain.
 %             mstrains and alphastrains are the mass and fusion rates of each strain.
 %             S - number of strains.
+%             A, M T, C and \beta are just the parameters given in the analytical part of the text.
 
 g=zeros(S,1);
 
