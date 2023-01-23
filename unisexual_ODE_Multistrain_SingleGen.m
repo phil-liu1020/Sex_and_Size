@@ -9,7 +9,6 @@ function M = unisexual_ODE_Multistrain_SingleGen(alphastrains,S)
 % The output M is an array with first row giving the row number of the array. The second and third rows give information on which strain each row of x (each ODE) contains. If a row of x represents a cell with strain 1 fused with strain 2, this corresponding row of M will contain a 1 and 2 in its 2nd and 3rd columns.   
 
 
-x = zeros(S+nchoosek(S+1 ,2),1);
 k=1;
 M=zeros(1,3);
 
@@ -29,7 +28,6 @@ for i=1:S
        else
        end
 
-   dx(k+S) = 0.5*(  alphastrains(i+1)+alphastrains(j+1)  )*x(i)*x(j);                                 % This evaluates the expression dFi/dt=alpha\sum^{n}_{j\neq i} N_iN_j
    M(k+S,1)=k+S;
    M(k+S,2)=i;
    M(k+S,3)=j;
