@@ -16,7 +16,7 @@ end
 
 for i=1:S
 
-N0(i)=( A*M*f(i) )/mstrains(i+1);
+N0(i)=( A*M*f(i) )/mstrains(i+1);          % N0(i) is the number of unfused cells of strain i.
 
 end
 
