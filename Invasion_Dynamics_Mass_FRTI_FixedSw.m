@@ -23,7 +23,7 @@ while Ngen<G
     Nres0=(A*M*(1-f0))/m0; 
     Nmut0=(A*M*f0)/(m0+delta);
 
-    [t,x] = ode45(@(t,x)unisexual_ODE(t,x,alpha),[0,T],[Nres0,Nmut0,0,0,0]);
+    [t,x] = ode45(@(t,x)unisexual_ODE_Multistrain(t,x,[0,alpha,alpha],2),[0,T],[Nres0,Nmut0,0,0,0]);
     wmut=x(length(x(:,1)),5)*exp(-betaB/(2*(m0+delta)))*(1-C)+x(length(x(:,1)),4)*exp(-betaB/(2*m0+delta))*(1-C)+x(length(x(:,1)),2)*exp(-betaB/(m0+delta)); 
     wres=x(length(x(:,1)),3)*exp(-betaB/(2*m0))*(1-C)+x(length(x(:,1)),4)*exp(-betaB/(2*m0+delta))*(1-C)+x(length(x(:,1)),1)*exp(-betaB/m0);
     fmut=wmut./(wmut+wres);
@@ -52,7 +52,7 @@ while Ngen<G
     Nres0=(A*M*(1-f0))/m0; 
     Nmut0=(A*M*f0)/(m0+delta);
 
-    [t,x] = ode45(@(t,x)unisexual_ODE(t,x,alpha),[0,T],[Nres0,Nmut0,0,0,0]);
+    [t,x] = ode45(@(t,x)unisexual_ODE_Multistrain(t,x,[0,alpha,alpha],2),[0,T],[Nres0,Nmut0,0,0,0]);
     wmut=x(length(x(:,1)),5)*exp(-betaG/(2*(m0+delta)))*(1-C)+x(length(x(:,1)),4)*exp(-betaG/(2*m0+delta))*(1-C)+x(length(x(:,1)),2)*exp(-betaG/(m0+delta)); 
     wres=x(length(x(:,1)),3)*exp(-betaG/(2*m0))*(1-C)+x(length(x(:,1)),4)*exp(-betaG/(2*m0+delta))*(1-C)+x(length(x(:,1)),1)*exp(-betaG/m0);
     fmut=wmut./(wmut+wres);
