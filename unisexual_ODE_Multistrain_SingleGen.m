@@ -14,13 +14,6 @@ k=1;
 M=zeros(1,3);
 
 for i=1:S
-  dx(i) = 0;
-
-  for j=1:S
- 
-  dx(i)=dx(i)+(-0.5*( alphastrains(i+1)+alphastrains(j+1) )*x(i)*x(j));                   % This evaluates the expression dNi/dt=-alpha(Ni^2+\sum^{n}_{j\neq i} N_iN_j)
-  
-  end
   
   M(i,1)=i;
   M(i,2)=i;
