@@ -1,4 +1,4 @@
-function [StrainData_m,StrainData_alpha,m,alpha,mstrains,alphastrains,f]=Evol_Dynamics_Mass_Alpha_Switching_Gillespie_Branching(m0,alpha0,A,M,T,C,betaB,betaG,lambdaGB,lambdaBG,mu,NEVOL,f0,delta)
+function [StrainData_m,StrainData_alpha,m,alpha]=Evol_Dynamics_Mass_Alpha_Switching_Gillespie_Branching(m0,alpha0,A,M,T,C,betaB,betaG,lambdaGB,lambdaBG,mu,NEVOL,f0,delta)
 
 % This code simulates the coevolutionary dynamics between mass m and fusion
 % rate \alpha over NEVOL mutations for a system undergoing bet-hedging in a
@@ -9,7 +9,7 @@ function [StrainData_m,StrainData_alpha,m,alpha,mstrains,alphastrains,f]=Evol_Dy
 % functions "Evol_Branching_plots" or "Evol_Branching_plots_Coevolution".
 
 
-% Parameters: m0 - initial mass
+% Input Parameters: m0 - initial mass
 %             \alpha_0 - initial fusion rate
 %             f0 - initial frequency of rare mutant
 %             mu - mutation rate.
@@ -18,6 +18,9 @@ function [StrainData_m,StrainData_alpha,m,alpha,mstrains,alphastrains,f]=Evol_Dy
 %             betaG - resistance to survival in good environment
 %             lambdaGB - rate of switching from good to bad environment
 %             lambdaBG - rate of switching from bad to good environment
+% Output Parameters:
+%             StrainData_m and StrainData_alpha are cell arrays storing information on the mass and fusion rate of each strain at a given time during the simulation. They both store the frequency of each strain at a given time in the simulation.
+%             m and alpha are vectors showing the mean mass and fusion rate of the population respectively following each mutation event.
 
 Good=1; Bad=0;
 StrainData_m=cell(NEVOL,2);
