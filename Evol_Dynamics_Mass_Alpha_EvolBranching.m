@@ -16,6 +16,7 @@ function [StrainData_m,StrainData_alpha,m,alpha,mstrains,alphastrains,f]=Evol_Dy
 %             f0 - initial frequency of rare mutant
 %             mu - mutation rate.
 %             \delta - mutational stepsize
+%             alphamax - maximum possible fusion rate imposed by energetic/environmental constraints. If we wish not to consider alphamax, set alphamax to some large value e.g. 1000. 
 
 % This block of code is for initialisation.
 %-------------------------------------------------------------
