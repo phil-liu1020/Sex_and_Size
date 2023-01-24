@@ -1,9 +1,14 @@
 function f = Single_Generation(mstrains,alphastrains,x,S,beta,C)
 
 % Simulates the frequency after each successive generation.
-% x, the output of the function "Fertilisation_Kinetics", is a vector of length S+Binomial(S+1,2) that represents the number of cells of each type potentially present at the end of the fusion period. This includes S types of unfused cells (x(1),...,x(S)) (one for each genotype) and Binomial(S,2) fused cells (x(S+1),...,x(S(S+3)/2)) (one for each pair of genotypes in a fused cell).
-% \beta is the resistance to survival and C is the fusion cost as defined in the text.
-% mstrains and alphastrains are the mass and fusion rates of each strain.
+% Input parameters:
+%                x, the output of the function "Fertilisation_Kinetics", is a vector of length S+Binomial(S+1,2) that represents the number of cells of each type potentially present at the end of the fusion period. This includes S types of unfused cells (x(1),...,x(S)) (one for each genotype) and Binomial(S,2) fused cells (x(S+1),...,x(S(S+3)/2)) (one for each pair of genotypes in a fused cell).
+%                \beta is the resistance to survival and C is the fusion cost as defined in the text.
+%                mstrains and alphastrains are the mass and fusion rates of each strain.
+
+% Output parameters:
+%                  f is the frenqeucy of all strains in the subsequent generation.
+
 
 Mv=unisexual_ODE_Multistrain_SingleGen(alphastrains,S);  % writes the array Mv, a (S+Binomial(S,2)) x 3 matrix. The first column of Mv is the enumeration of the cell type produced at the end of the fusion period (corresponding to the enumeration of x). The second and third columns are the strains contributing to fused cells recorded in the ith row. If the third column is zero, this indicates the cell is unfused
 f=zeros(S,1);
