@@ -1,4 +1,4 @@
-function [StrainData_m,StrainData_alpha,m,alpha,mstrains,alphastrains,f]=Evol_Dynamics_Mass_Alpha_Branching(m0,alpha0,f0,A,M,T,C,beta,mu,delta,NEVOL,alphamax)
+function [StrainData_m,StrainData_alpha,m,alpha]=Evol_Dynamics_Mass_Alpha_Branching(m0,alpha0,f0,A,M,T,C,beta,mu,delta,NEVOL,alphamax)
 
 % This code simulates the coevolutionary dynamics between mass m and fusion rate \alpha over NEVOL mutations. 
 % Here, the outputs StrainData_m and StrainData_alpha gives the set of all strains in one simulation of the coevoultionary dynamics. This enable us to visualise evolutionary branching in both mass and \alpha.
@@ -20,6 +20,7 @@ function [StrainData_m,StrainData_alpha,m,alpha,mstrains,alphastrains,f]=Evol_Dy
 %             NEVOL is the number of mutations to occur. NEVOL=(total number of generations)*mu. E.g if you want the system to run for 1.1x10^(7) generations and the mutation rate is mu=5x10^(-4), then NEVOL=5.5x10^(3).
 % Output parameters: 
 %             StrainData_m and StrainData_alpha are cell arrays storing information on the mass and fusion rate of each strain at a given time during the simulation. They both store the frequency of each strain at a given time in the simulation.
+%             m and alpha are vectors showing the mean mass and fusion rate of the population respectively following each mutation event.
 
 % This block of code is for initialisation.
 %-------------------------------------------------------------
