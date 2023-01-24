@@ -1,7 +1,7 @@
 function gend = Invasion_dynamics(mstrains,alphastrains,S,beta,C,G,T,A,M,f)
 
 % This function simulates then invasion dynamics over G generations.
-% Parameters: G - number of generations
+% Input Parameters: G - number of generations
 %             f - initial frequency of each strain.
 %             mstrains and alphastrains are the mass and fusion rates of each strain.
 %             S - number of strains.
