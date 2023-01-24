@@ -12,23 +12,23 @@ function Invtraj=Invasion_dynamics_FRTI(mstrains,alphastrains,S,betaB,betaG,lamb
 %             stochastic=1. If you want to simulate fixed switching, set stochastic=0.
 
 
-tinc=0;                      % tinc is the time elapsed during a switching event.
+tinc=0;                      % tinc is the time elapsed during a switching event. tinc is incremented right after a switching event.
 Invtraj=zeros(1,G);          % Invtraj will represent the invasion trajectory of an invading mutant.
-Good=1; Bad=0;               % The default environmental states.
+Good=1; Bad=0;               % The default environmental state is the good environmental state.
 
 while tinc<=G
 
 if Good==1
 
     if stochastic==1
-    tnext=geornd(  lambdaGB )+1;
+    tnext=geornd(  lambdaGB )+1;        % tnext is the time until the next switching event. 
     else
     tnext=round(1/lambdaGB);    
     end
 
 [g,f]=Invasion_dynamics_withTraj(mstrains,alphastrains,S,betaG,C,tnext,T,A,M,f);
 Invtraj(tinc+1:tnext+tinc)=g(2,:);
-tinc=tinc+tnext;
+tinc=tinc+tnext;   % Here is wheree tinc is incremented.
 Good=0; Bad=1;
 else
 
