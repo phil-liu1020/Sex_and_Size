@@ -7,6 +7,7 @@ function [mres,alphares]=Evol_Dynamics_Mass_Alpha(m0,alpha0,f0,A,M,T,C,beta,mu,d
 %             f0 - initial frequency of rare mutant
 %             mu - mutation rate.
 %             \delta - mutational stepsize
+%             NEVOL - the number of mutations to occur. NEVOL=(total number of generations)/mu.
 
 % This block of code is for initialisation.
 %-------------------------------------------------------------
