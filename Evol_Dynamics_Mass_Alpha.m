@@ -2,12 +2,15 @@ function [m,alpha]=Evol_Dynamics_Mass_Alpha(m0,alpha0,f0,A,M,T,C,beta,mu,delta,N
 
 % This code simulates the coevolutionary dynamics between mass m and fusion
 % rate \alpha over NEVOL mutations.
-% Parameters: m0 - initial mass
+% Input Parameters: m0 - initial mass
 %             \alpha_0 - initial fusion rate
 %             f0 - initial frequency of rare mutant
 %             mu - mutation rate.
 %             \delta - mutational stepsize
 %             NEVOL - the number of mutations to occur. NEVOL=(total number of generations)*mu. E.g if you want the system to run for 1.1x10^(7) generations and the mutation rate is mu=5x10^(-4), then NEVOL=5.5x10^(3).
+% Output Parameters:
+%             m and alpha are vectors showing the mean mass and fusion rate of the population respectively following each mutation event.
+
 
 % This block of code is for initialisation.
 %-------------------------------------------------------------
