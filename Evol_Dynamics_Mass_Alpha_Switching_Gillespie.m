@@ -11,7 +11,7 @@ function [m,alpha,muttime,meanswBG,meanswGB,randomG]=Evol_Dynamics_Mass_Alpha_Sw
 %             betaG - resistance to survival in good environment
 %             lambdaGB - rate of switching from good to bad environment
 %             lambdaBG - rate of switching from bad to good environment
-%             NEVOL is the number of mutations to occur.
+%             NEVOL is the number of mutations to occur. NEVOL=(total number of generations)*mu. E.g if you want the system to run for 1.1x10^(7) generations and the mutation rate is mu=5x10^(-4), then NEVOL=5.5x10^(3).
 
 % Please note that this code can also be used to simulate the coevolutionary dynamics between m and \alpha in a fixed
 % environment by either setting betaG=betaB or setting lambdaGB and lambdaBG to 0.
