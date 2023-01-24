@@ -1,4 +1,4 @@
-function [mres,alphares]=Evol_Dynamics_Mass_Alpha_Many_Realisations(Nrealz,m0,alpha0,f0,A,M,T,C,beta,mu,delta,NEVOL)
+function [m,alpha]=Evol_Dynamics_Mass_Alpha_Many_Realisations(Nrealz,m0,alpha0,f0,A,M,T,C,beta,mu,delta,NEVOL)
 
 % Obtains multiple realisations of the simulation for the coevolutionary dynamics between mass and \alpha.
 % Parameters: Nrealz - number of realisations
