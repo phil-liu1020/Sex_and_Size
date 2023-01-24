@@ -1,4 +1,4 @@
-function [StrainData_m,StrainData_alpha,m,alpha,mstrains,alphastrains,f]=Evol_Dynamics_Mass_Alpha_EvolBranching(m0,alpha0,f0,A,M,T,C,beta,mu,delta,NEVOL,alphamax)
+function [StrainData_m,StrainData_alpha,m,alpha,mstrains,alphastrains,f]=Evol_Dynamics_Mass_Alpha_Branching(m0,alpha0,f0,A,M,T,C,beta,mu,delta,NEVOL,alphamax)
 
 % This code simulates the coevolutionary dynamics between mass m and fusion rate \alpha over NEVOL mutations. 
 % Here, the outputs StrainData_m and StrainData_alpha gives the set of all strains in one simulation of the coevoultionary dynamics. This enable us to visualise evolutionary branching in both mass and \alpha.
