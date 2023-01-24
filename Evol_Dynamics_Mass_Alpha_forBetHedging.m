@@ -6,6 +6,9 @@ function [mstrains,alphastrains,f]=Evol_Dynamics_Mass_Alpha_forBetHedging(mstrai
 % Parameters: mstrains and alphastrains - the mass and fusion rate of all the strains.
 %             f - initial frequency of all the strains.
 %             f0 - initial frequency of rare mutant.
+% Output Parameters: mstrains and alphastrains - the mass and fusion rate of all the strains present after the introduction of a rare mutant at frequency f0.
+%                    f - frequency of all the strains after the introduction of a rare mutant at frequency f0.
+              
 
 % This block of code is for initialisation.
 %-------------------------------------------------------------
