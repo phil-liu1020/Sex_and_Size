@@ -18,7 +18,8 @@ function [StrainData_m,StrainData_alpha,m,alpha,mstrains,alphastrains,f]=Evol_Dy
 %             \delta - mutational stepsize
 %             alphamax - maximum possible fusion rate imposed by energetic/environmental constraints. If we wish not to consider alphamax, set alphamax to some large value e.g. 1000. 
 %             NEVOL is the number of mutations to occur. NEVOL=(total number of generations)*mu. E.g if you want the system to run for 1.1x10^(7) generations and the mutation rate is mu=5x10^(-4), then NEVOL=5.5x10^(3).
-
+% Output parameters: 
+%             StrainData_m and StrainData_alpha are cell arrays storing information on the mass and fusion rate of each strain at a given time during the simulation. They both store the frequency of each strain at a given time in the simulation.
 
 % This block of code is for initialisation.
 %-------------------------------------------------------------
