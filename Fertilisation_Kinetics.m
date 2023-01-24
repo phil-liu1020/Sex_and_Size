@@ -4,6 +4,8 @@ function x = Fertilisation_Kinetics(mstrains,alphastrains,f,S,A,M,T)
 % Input parameters: mstrains and alphastrains - the mass and fusion rate of all the strains.
 %                   f - frequency of each strain.
 %                   S - number of distinct strains.
+% Output parameters:
+%                x is the vector of length S+Binomial(S+1,2) that represents the number of cells of each type potentially present at the end of the fusion period.
 
 if length(mstrains)~=S+1 || length(alphastrains)~=S+1
     error('length of mstrains or alphastrains incorrect')
