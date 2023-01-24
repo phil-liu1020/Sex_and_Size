@@ -7,6 +7,8 @@ function gend = Invasion_dynamics(mstrains,alphastrains,S,beta,C,G,T,A,M,f)
 %             S - number of strains.
 %             A, M T, C and \beta are just the parameters given in the analytical part of the text.
 
+% Output Parameters: gend is the frequency of all strains at generation G.
+
 g=zeros(S,1);
 
 % The for loop iterates the function "Single_Generation" over G generations. This function outputs the frequency of each strain at the G-th generation.
