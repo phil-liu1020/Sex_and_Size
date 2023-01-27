@@ -23,9 +23,9 @@ Simulations for Figure S15 are obtained using
 
 
 
-Evolutionary_trajectories:
+Evolutionary_trajectories
 This function is the function for simulating evolutionary trajectories for all case scenarios. It has the option to produce a single  realisation or                     multiple realisations.
               
-              Evolutionary_trajectories_Many_realisations:
+              Evolutionary_trajectories_Many_realisations
               
-              Evolutionary_trajectories_1realisation:
+              Evolutionary_trajectories_1realisation
