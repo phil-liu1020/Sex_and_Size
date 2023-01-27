@@ -18,3 +18,11 @@ The data for Figure S8 is obtained using Evol_Dynamics_Mass_Alpha_EvolBranching_
 The data for Figures S9 to S12 are obtained using Evol_Dynamics_Mass_Alpha_Switching_Gillespie_Branching, with parameters as described in the caption.
 
 Simulations for Figure S15 are obtained using 
+
+
+
+
+
+Evolutionary_trajectories
+%%%%%%%%%%%%%%%%%%%%%%%%% This function is the function for simulating evolutionary trajectories for all case scenarios. It has the option to produce a single %%%%%%%%%%%%%%%%%%%%%%%%% realisation or multiple realisations.
+                          Multiple_realisations
