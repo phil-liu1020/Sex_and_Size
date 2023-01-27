@@ -15,7 +15,6 @@ cd ..
 
 cd ..
 
-cd ..
 
 save('Data_files\Fig4\panel_b\m_FRTI.mat','m');
 save('Data_files\Fig4\panel_b\alpha_FRTI.mat','alpha');
