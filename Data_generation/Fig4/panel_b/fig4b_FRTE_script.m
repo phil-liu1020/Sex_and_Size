@@ -11,5 +11,9 @@ addpath(genpath('Sex_and_Size-main'))
 
 cd ..
 
+cd ..
+
+cd ..
+
 save('Data_files\Fig4\panel_b\m_FRTE.mat','m');
 save('Data_files\Fig4\panel_b\alpha_FRTE.mat','alpha');
