@@ -12,7 +12,6 @@ addpath(genpath('Sex_and_Size-main'))
 cd ..
 cd ..
 cd ..
-cd ..
 
 save('Data_files\Fig2\panel_a\m_201.mat','m');
 save('Data_files\Fig2\panel_a\alpha_201.mat','alpha');
