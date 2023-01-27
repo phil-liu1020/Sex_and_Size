@@ -12,6 +12,9 @@ switching_environments=0; plasticity=0; return_traits=0; number_of_realisations=
 addpath(genpath('Sex_and_Size-main'))
 
 cd ..
+cd ..
+cd ..
+cd ..
 
 save('Data_files\Fig2\panel_a\m_1506.mat','m');
 save('Data_files\Fig2\panel_a\alpha_1506.mat','alpha');
