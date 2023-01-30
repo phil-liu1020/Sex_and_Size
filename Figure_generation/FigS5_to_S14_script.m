@@ -1,4 +1,4 @@
-% Instructions for producing FigS5.
+% Instructions for producing FigS5 to FigS14.
 
 % First, open "Data_Files/FigS5" folder.
 
