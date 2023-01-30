@@ -1,7 +1,7 @@
 % fig 4b
 % initialising parameters
 
-A=100; M=10; T=0.1; C=0.7; beta1=4; beta2=0.01; lambda21=0.00035/6; lambda12=91/4440000; mu=0.00035; delta=0.007; NEVOL=3500; f0=0.002; m0=2; alpha0=0.6; 
+A=100; M=10; T=0.1; C=0.7; beta1=4; beta2=0.01; lambda21=0.0005/6; lambda12=13/444000; mu=0.0005; delta=0.005; NEVOL=3500; f0=0.002; m0=2; alpha0=0.6; 
 switching_environments=1; plasticity=0; return_traits=0; number_of_realisations=25; alphamax=1000;
 
 
