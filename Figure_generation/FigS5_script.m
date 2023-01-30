@@ -1,6 +1,8 @@
-% Open "Data_Files/FigS5" folder.
+% Instructions for producing FigS5.
 
-  % To reprdouce all the panels of FigS5, execute the command
+% First, open "Data_Files/FigS5" folder.
+
+% To reproduce all the panels of FigS5, execute the command
   
 Evol_Branching_plots(StrainsData_m);
 
