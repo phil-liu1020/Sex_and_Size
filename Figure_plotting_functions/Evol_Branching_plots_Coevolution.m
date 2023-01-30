@@ -52,3 +52,8 @@ for j=1:round(length(CellArray)/10)-1
 end
 
 colorbar
+pbaspect([1 1 1])
+set(gca,'fontsize',14)
+box on
+xlabel('m')
+ylabel('\alpha')
