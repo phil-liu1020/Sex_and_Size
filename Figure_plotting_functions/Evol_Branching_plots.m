@@ -47,3 +47,13 @@ for j=1:round(length(CellArray)/10)-1
 end
 
 colorbar
+pbaspect([1 1/3 1])
+set(gca,'fontsize',14)
+box on
+xlabel('\tau')
+if strcmp(inputname(1),'StrainsData_m')==1
+ylabel('m')
+elseif strcmp(inputname(1),'StrainsData_alpha')==1
+ylabel('\alpha')
+else
+end
