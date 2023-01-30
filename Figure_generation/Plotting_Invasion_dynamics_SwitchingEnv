@@ -1,4 +1,4 @@
-function Invtraj=Plotting_Invasion_dynamics(mstrains,alphastrains,S,betaB,betaG,lambdaGB,lambdaBG,C,G,T,A,M,f,stochastic)
+function Invtraj=Plotting_Invasion_dynamics_SwitchingEnv(mstrains,alphastrains,S,betaB,betaG,lambdaGB,lambdaBG,C,G,T,A,M,f,stochastic)
 
 % This function simulates the invasion dynamics of a system undergoing bet-hedging in an environment that switches FRTI. It does so over G generations.
 % Parameters: G - number of generations
@@ -26,7 +26,7 @@ if Good==1
     tnext=round(1/lambdaGB);    
     end
 
-[g,f]=Invasion_dynamics_withTraj(mstrains,alphastrains,S,betaG,C,tnext,T,A,M,f);
+[g,f]=Plotting_Invasion_dynamics(mstrains,alphastrains,S,betaG,C,tnext,T,A,M,f);
 Invtraj(tinc+1:tnext+tinc)=g(2,:);
 tinc=tinc+tnext;   % Here is wheree tinc is incremented.
 Good=0; Bad=1;
@@ -39,7 +39,7 @@ else
     end
 
 
-[g,f]=Invasion_dynamics_withTraj(mstrains,alphastrains,S,betaB,C,tnext,T,A,M,f);
+[g,f]=Plotting_Invasion_dynamics(mstrains,alphastrains,S,betaB,C,tnext,T,A,M,f);
 Invtraj(tinc+1:tnext+tinc)=g(2,:);
 tinc=tinc+tnext;
 Good=1; Bad=0;
