@@ -12,5 +12,5 @@ This is the function for simulating evolutionary trajectories for all case scena
                                                    
                                                                     Survival_function: This function takes as input the parameters A, M, T, C, \beta as well as mass, alpha and freqnency of each genotype in the population and calculates the frequency in the subsequent generation.
                                                                     
-                                                                    Fertilisation_kinetics:
+                                                                    Fertilisation_kinetics: This function runs the ODE (S.22)-(S.23) for a time period of T using Runge-Kutta 45 in order to calculate the population of each type of cell at the end of the fertilisation period.
                                                    
