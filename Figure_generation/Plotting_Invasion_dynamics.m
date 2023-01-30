@@ -1,4 +1,4 @@
-function [g,gend] = Invasion_dynamics_withTraj(mstrains,alphastrains,S,beta,C,G,T,A,M,f)
+function [g,gend] = Plotting_Invasion_dynamics(mstrains,alphastrains,S,beta,C,G,T,A,M,f)
 
 % This function simulates then invasion dynamics over G generations.
 % Parameters: G - number of generations
