@@ -21,11 +21,11 @@ end
 
 [~,~,m,alpha,m2,alpha2]=Evolutionary_trajectories_1realisation(m0,alpha0,A,M,T,C,beta1(i),beta2,lambda21,lambda12,mu,NEVOL,f0,delta,alphamax, switching_environments, return_traits,plasticity);
 
-if abs(m2(end)-beta2/4)<2*delta && alpha2(end)>2*delta
+if abs(m2(end)-beta2/4)<2*delta || alpha2(end)>4*delta
 fusion_env2beta1(i)=1;
 end
 
-if abs(m(end)-beta1(i)/4)<2*delta && alpha(end)>2*delta
+if abs(m(end)-beta1(i)/4)<2*delta || alpha(end)>4*delta
 fusion_env1beta1(i)=1;
 end
 
@@ -36,11 +36,11 @@ m0=P1*beta1(i)+P2*beta2;
 
 [~,~,m,alpha,m2,alpha2]=Evolutionary_trajectories_1realisation(m0,alpha0,A,M,T,C,beta1(i),beta2,lambda21,lambda12,mu,NEVOL,f0,delta,alphamax, switching_environments, return_traits,plasticity);
 
-if abs(m2(end)-beta2/4)<2*delta && alpha2(end)>2*delta
+if abs(m2(end)-beta2/4)<2*delta || alpha2(end)>4*delta
 fusion_env2betaBH(i)=1;
 end
 
-if abs(m(end)-beta1(i)/4)<2*delta && alpha(end)>2*delta
+if abs(m(end)-beta1(i)/4)<2*delta || alpha(end)>4*delta
 fusion_env1betaBH(i)=1;
 end
 
