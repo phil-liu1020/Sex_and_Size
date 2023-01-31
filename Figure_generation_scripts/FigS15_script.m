@@ -1,6 +1,7 @@
 % Instruction for FigS15 panel a)
 
-cd C:\Users\liuph\Downloads\Sex_and_Size-main\Simulation_Functions
+cd ..
+cd Figure_plotting_functions
 
 addpath(genpath('Sex_and_Size-main'))
 
