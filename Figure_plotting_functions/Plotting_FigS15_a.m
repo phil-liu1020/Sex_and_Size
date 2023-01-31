@@ -8,7 +8,7 @@ fusion_env2betaBH=zeros(1,length(beta1));
 fusion_env1betaBH=zeros(1,length(beta1));
 figS15output=zeros(1,length(beta1));
 
-
+addpath(genpath('Sex_and_Size-main'))
 
 
 for i=1:length(beta1)
