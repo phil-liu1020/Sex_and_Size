@@ -1,3 +1,0 @@
-Due to the small data filesizes of Figures S2 to S4, a figure can be conveniently obtained directly from the simulation function that generates the dataset.
-
-Please see folder "Figure_generation_scripts" for insttructions on generating Figures S2 to S4.
