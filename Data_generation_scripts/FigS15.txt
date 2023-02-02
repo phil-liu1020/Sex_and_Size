@@ -1,1 +1,0 @@
-Due to the small dataset, the plot of FigS15 can be conveniently obtained directly from the simulation functions. Please see "Figure_generation_scripts" for instructions on how to plot FigS15.
